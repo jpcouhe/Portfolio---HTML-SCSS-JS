@@ -15,7 +15,7 @@
     }
 
     &__name {
-        @include breakpoint(560px) {
+        @include breakpoint(600px) {
             font-size: 1.4rem;
         }
     }
@@ -26,9 +26,14 @@
         display: none;
     }
     li {
+        font-size: 1.4rem;
+
         margin: 0 5px;
         padding: 10px 5px;
         color: $text_color_light;
+        @include breakpoint(560px) {
+            padding: 10px 0px;
+        }
     }
 
     li:last-child {
@@ -36,12 +41,14 @@
         color: $white;
         border-radius: 5px;
         padding: 10px 30px;
+        @include breakpoint(560px) {
+            padding: 10px 20px;
+        }
     }
 }
 
 .menu_responsive {
     @include sm {
         display: flex;
-        
     }
 }

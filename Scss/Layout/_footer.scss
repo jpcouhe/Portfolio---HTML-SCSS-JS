@@ -1,0 +1,18 @@
+@use "../Utils/" as *;
+
+.footer_container {
+    background-color: $bgcolor_dark;
+    width: 100%;
+}
+
+.footer {
+    height: 80px;
+
+    ul {
+        height: 100%;
+
+        li {
+            margin: 0 10px;
+        }
+    }
+}

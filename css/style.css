@@ -79,7 +79,7 @@ svg {
   font-weight: 400;
 }
 
-.fs-1 {
+.fs-1rem {
   font-size: 1rem;
 }
 
@@ -115,7 +115,7 @@ svg {
   background-color: #69d5f2;
   margin-right: 10px;
 }
-@media (max-width: 560px) {
+@media (max-width: 600px) {
   .header__left__name {
     font-size: 1.4rem;
   }
@@ -127,15 +127,26 @@ svg {
   }
 }
 .header__right li {
+  font-size: 1.4rem;
   margin: 0 5px;
   padding: 10px 5px;
   color: #32343a;
+}
+@media (max-width: 560px) {
+  .header__right li {
+    padding: 10px 0px;
+  }
 }
 .header__right li:last-child {
   background-color: #222527;
   color: #fff;
   border-radius: 5px;
   padding: 10px 30px;
+}
+@media (max-width: 560px) {
+  .header__right li:last-child {
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -456,6 +467,21 @@ svg {
   width: 100%;
 }
 
+.footer_container {
+  background-color: #222527;
+  width: 100%;
+}
+
+.footer {
+  height: 80px;
+}
+.footer ul {
+  height: 100%;
+}
+.footer ul li {
+  margin: 0 10px;
+}
+
 .btn {
   width: 40%;
   margin: 20px auto 0;
@@ -464,7 +490,7 @@ svg {
   outline: none;
   border: none;
   color: #fff;
-  background-color: #69d5f2;
+  background-color: #222527;
 }
 
 /*# sourceMappingURL=style.css.map */
