@@ -1,0 +1,12 @@
+@use "../Utils/" as *;
+
+.btn {
+    width: 40%;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: $white;
+    background-color: $primary;
+}
