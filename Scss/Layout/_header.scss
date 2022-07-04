@@ -1,0 +1,47 @@
+@use "../Utils/" as *;
+
+.header {
+    height: 85px;
+    width: 100%;
+    padding: 25px;
+}
+
+.header__left {
+    &__logo {
+        width: 30px;
+        height: 30px;
+        background-color: $primary;
+        margin-right: 10px;
+    }
+
+    &__name {
+        @include breakpoint(560px) {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.header__right {
+    @include sm {
+        display: none;
+    }
+    li {
+        margin: 0 5px;
+        padding: 10px 5px;
+        color: $text_color_light;
+    }
+
+    li:last-child {
+        background-color: $bgcolor_dark;
+        color: $white;
+        border-radius: 5px;
+        padding: 10px 30px;
+    }
+}
+
+.menu_responsive {
+    @include sm {
+        display: flex;
+        
+    }
+}

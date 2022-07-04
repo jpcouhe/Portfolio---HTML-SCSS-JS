@@ -6,8 +6,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portfolio</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
     </head>
     <body>
-        <p>Fonctionne </p>
+        <header>
+            <div class="header container d-flex flex-justify-content-between flex-align-items-center">
+                <div class="header__left d-flex flex-align-items-center">
+                    <div class="header__left__logo"></div>
+                    <p class="header__left__name fw-500 fs-2rem">Jean-philippe Couhe.</p>
+                </div>
+                <nav class="header__right">
+                    <ul class="d-flex fs-1rem">
+                        <li><a href="#">A propos</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Projets</a></li>
+                    </ul>
+                </nav>
+                <div class="menu_responsive d-none">
+                    <span class="material-symbols-outlined"> menu </span>
+                </div>
+            </div>
+        </header>
+        <section class="section_container presentation d-flex">
+            <div class="presentation__left">
+                <div class="image_container">
+                    <img src="./images/Profil.png" alt="Portrait" />
+                    <div class="image_frame"></div>
+                </div>
+            </div>
+            <div class="presentation__right">
+                <div class="presentation__right__title fw-500">Salut !</div>
+                <div class="presentation__right__texte">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et tincidunt augue, vel
+                    faucibus ligula. Pellentesque euismod, nisl viverra dignissim.
+                </div>
+            </div>
+        </section>
     </body>
 </html>

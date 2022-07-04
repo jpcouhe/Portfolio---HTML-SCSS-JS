@@ -1,0 +1,70 @@
+@use "../Utils/" as *;
+
+.presentation {
+    padding: 80px 100px 150px;
+    @include md {
+        padding: 50px 70px 120px;
+    }
+
+    @include breakpoint(666px) {
+        display: block;
+    }
+}
+
+.presentation__left {
+    margin-right: 70px;
+    @include breakpoint(666px) {
+        margin-right: 0;
+    }
+
+    .image_container {
+        position: relative;
+        height: 260px;
+        width: 220px;
+        @include breakpoint(666px) {
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+
+    .image_frame {
+        height: 260px;
+        width: 220px;
+        border: 1px solid $primary;
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        border-radius: 5px;
+        z-index: -1;
+    }
+}
+
+.presentation__right {
+    width: 100%;
+    @include breakpoint(666px) {
+        margin-top: 30px;
+    }
+    &__title {
+        line-height: 7rem;
+        font-size: 7rem;
+
+        @include md {
+            font-size: 6rem;
+        }
+    }
+
+    &__texte {
+        font-size: 2rem;
+        line-height: 3.4rem;
+
+        @include md {
+            font-size: 1.4rem;
+        }
+    }
+}
