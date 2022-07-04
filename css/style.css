@@ -444,6 +444,7 @@ svg {
   outline: none;
   padding: 5px;
   resize: none;
+  font-family: "Poppins", sans-serif;
 }
 .textarea textarea::placeholder {
   font-family: "Poppins", sans-serif;
