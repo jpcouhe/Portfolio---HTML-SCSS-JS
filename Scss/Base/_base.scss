@@ -26,6 +26,10 @@ ul {
     list-style-type: none;
 }
 
+svg {
+    height: 30px;
+    width: 30px;
+}
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -33,7 +37,7 @@ ul {
 
 .section_container {
     max-width: 990px;
-    height: 490px;
+    // height: 490px;
     margin: 0 auto;
 }
 
@@ -88,6 +92,12 @@ ul {
     font-size: 2rem;
 }
 
-.mb-60 {
-    margin-bottom: 60px;
+.mb-10 {
+    margin-bottom: 10px;
 }
+
+
+.mr-10 {
+    margin-right: 10px;
+}
+

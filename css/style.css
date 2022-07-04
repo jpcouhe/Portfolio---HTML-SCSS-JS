@@ -24,6 +24,11 @@ ul {
   list-style-type: none;
 }
 
+svg {
+  height: 30px;
+  width: 30px;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -31,7 +36,6 @@ ul {
 
 .section_container {
   max-width: 990px;
-  height: 490px;
   margin: 0 auto;
 }
 
@@ -87,8 +91,12 @@ ul {
   font-size: 2rem;
 }
 
-.mb-60 {
-  margin-bottom: 60px;
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
 }
 
 .header {
@@ -133,16 +141,21 @@ ul {
 }
 
 .presentation {
-  padding: 80px 100px 150px;
+  padding: 80px 100px 80px;
 }
 @media (max-width: 768px) {
   .presentation {
-    padding: 50px 70px 120px;
+    padding: 50px 70px 40px;
   }
 }
 @media (max-width: 666px) {
   .presentation {
     display: block;
+  }
+}
+@media (max-width: 480px) {
+  .presentation {
+    padding: 20px 40px 30px;
   }
 }
 
@@ -199,12 +212,88 @@ ul {
   }
 }
 .presentation__right__texte {
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 3.4rem;
 }
 @media (max-width: 768px) {
   .presentation__right__texte {
+    font-size: 1.8rem;
+  }
+}
+
+.technologie {
+  padding: 0px 100px 80px;
+}
+@media (max-width: 768px) {
+  .technologie {
+    padding: 0px 70px 40px;
+  }
+}
+@media (max-width: 480px) {
+  .technologie {
+    padding: 0px 30px;
+  }
+}
+
+.technologie__title {
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+  .technologie__container {
+    display: block;
+  }
+}
+
+.technologie__left {
+  min-width: 50%;
+  margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .technologie__left {
+    width: 100%;
+    margin: 10px 0 20px;
+  }
+}
+.technologie__left__texte {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  .technologie__left__texte {
     font-size: 1.4rem;
+  }
+}
+
+.technologie__right {
+  display: flex;
+  align-items: center;
+}
+.technologie__right ul {
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .technologie__right ul {
+    justify-content: center;
+  }
+}
+.technologie__right li {
+  border: 1px solid #aaa6a6;
+  padding: 5px;
+  border-radius: 5px;
+}
+.technologie__right svg {
+  margin-right: 5px;
+}
+.technologie__right span {
+  font-size: 1.8rem;
+}
+@media (max-width: 768px) {
+  .technologie__right .li_container {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 

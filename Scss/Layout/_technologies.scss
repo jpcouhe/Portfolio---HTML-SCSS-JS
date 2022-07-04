@@ -1,0 +1,73 @@
+@use "../Utils/" as *;
+
+.technologie {
+    padding: 0px 100px 80px;
+    @include md {
+        padding: 0px 70px 40px;
+    }
+
+    @include sm {
+        padding: 0px 30px;
+    }
+}
+
+.technologie__title {
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.technologie__container {
+    @include md {
+        display: block;
+    }
+}
+.technologie__left {
+    min-width: 50%;
+    margin-right: 20px;
+
+    @include md {
+        width: 100%;
+        margin: 10px 0 20px;
+    }
+    &__texte {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        font-weight: 300;
+
+        @include md {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.technologie__right {
+    display: flex;
+    align-items: center;
+
+    ul {
+        flex-wrap: wrap;
+
+        @include md {
+            justify-content: center;
+        }
+    }
+    li {
+        border: 1px solid $border;
+        padding: 5px;
+        border-radius: 5px;
+        // flex-wrap: wrap;
+    }
+    svg {
+        margin-right: 5px;
+    }
+
+    span {
+        font-size: 1.8rem;
+    }
+
+    .li_container {
+        @include md {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
