@@ -322,7 +322,7 @@ svg {
 }
 @media (max-width: 768px) {
   .project {
-    padding: 50px 70px 0px;
+    padding: 50px 40px 0px;
   }
 }
 @media (max-width: 480px) {
@@ -383,96 +383,69 @@ svg {
 
 .contact {
   padding: 50px 100px 30px;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .contact {
-    padding: 50px 70px 0px;
+    padding: 50px 70px 50px;
   }
 }
 @media (max-width: 480px) {
   .contact {
-    padding: 50px 40px 0px;
+    padding: 50px 40px 50px;
   }
+}
+.contact__title {
+  margin: 0 auto;
+  font-size: 5.9rem;
+}
+@media (max-width: 615px) {
+  .contact__title {
+    font-size: 4rem;
+  }
+}
+.contact__mention {
+  font-size: 2rem;
 }
 
 .contact_wrapper {
-  border-radius: 20px;
-  border: 1px solid #aaa6a6;
-  padding: 30px;
   display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   .contact_wrapper {
     flex-direction: column;
   }
 }
-
-.contact__title {
-  font-size: 5rem;
-  width: 50%;
+.contact_wrapper a {
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
 }
-@media (max-width: 960px) {
-  .contact__title {
-    width: 100%;
-    margin-bottom: 20px;
+.contact_wrapper a:hover {
+  background-color: #69d5f2;
+}
+@media (max-width: 768px) {
+  .contact_wrapper a {
+    width: 200px;
   }
-}
-
-.contact_form {
-  display: flex;
-  flex-direction: column;
-}
-.contact_form .inline-form {
-  display: flex;
-  gap: 30px;
-  margin-bottom: 10px;
 }
 @media (max-width: 600px) {
-  .contact_form .inline-form {
-    gap: 10px;
-    flex-direction: column;
+  .contact_wrapper a {
+    width: 100%;
   }
 }
-.contact_form .inline-form input {
-  width: 100%;
-  height: 50px;
-  background-color: #fff;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  padding: 5px;
-  margin-top: 10px;
+.contact_wrapper .contact__information {
+  font-size: 1.6rem;
+  padding: 20px;
 }
-.contact_form .inline-form input::placeholder {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
-  color: #aaa6a6;
-}
-.contact_form label {
-  font-size: 1.4rem;
-}
-
-.textarea {
-  display: flex;
-  flex-direction: column;
-}
-.textarea textarea {
-  background-color: #fff;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  padding: 5px;
-  resize: none;
-  font-family: "Poppins", sans-serif;
-}
-.textarea textarea::placeholder {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
-  color: #aaa6a6;
-}
-
-.test {
-  width: 100%;
+@media (max-width: 768px) {
+  .contact_wrapper .contact__information {
+    font-size: 1rem;
+  }
 }
 
 .footer_container {
