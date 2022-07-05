@@ -26,9 +26,9 @@
                 </div>
                 <nav class="header__right">
                     <ul class="d-flex fs-1rem">
-                        <li><a href="#">A propos</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Projets</a></li>
+                        <a href="#presentation"><li>A propos</li></a>
+                        <a href="#contact"><li>Contact</li></a>
+                        <a href="#projects"><li>Projets</li></a>
                     </ul>
                 </nav>
                 <div class="menu_responsive d-none">
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </header>
-        <section class="section_container presentation d-flex">
+        <section id='presentation'class="section_container presentation d-flex">
             <div class="presentation__left">
                 <div class="image_container">
                     <img src="./images/Profil.png" alt="Portrait" />
@@ -52,7 +52,7 @@
             </div>
         </section>
         <section class="section_container technologie d-flex flex-column">
-            <div class="technologie__title fw-500">Les technologies</div>
+            <div class="technologie__title fw-500">Technologies</div>
             <div class="technologie__container d-flex">
                 <div class="technologie__left">
                     <div class="technologie__left__texte">
@@ -64,7 +64,7 @@
                 <div class="technologie__right">
                     <ul class="d-flex">
                         <div class="li_container d-flex">
-                            <li class="d-flex flex-align-items-center mr-10 mb-10">
+                            <li class="test1 d-flex flex-align-items-center mr-10 mb-10">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 128 128"
@@ -87,7 +87,7 @@
                                 </svg>
                                 <span>HTML5</span>
                             </li>
-                            <li class="d-flex flex-align-items-center mr-10 mb-10">
+                            <li class="test2 d-flex flex-align-items-center mr-10 mb-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                     <path
                                         fill="#1572B6"
@@ -116,7 +116,7 @@
                                 </svg>
                                 <span>CSS3</span>
                             </li>
-                            <li class="d-flex flex-align-items-center mr-10 mb-10">
+                            <li class="test3 d-flex flex-align-items-center mr-10 mb-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                     <path
                                         fill-rule="evenodd"
@@ -129,7 +129,7 @@
                             </li>
                         </div>
                         <div class="li_container d-flex">
-                            <li class="d-flex flex-align-items-center mr-10 mb-10">
+                            <li class="test3 d-flex flex-align-items-center mr-10 mb-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                     <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z" />
                                     <path
@@ -139,7 +139,7 @@
                                 </svg>
                                 <span>JavaScript</span>
                             </li>
-                            <li class="d-flex flex-align-items-center mr-10 mb-10">
+                            <li class="test5 d-flex flex-align-items-center mr-10 mb-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                     <path
                                         fill="#B3B3B3"
@@ -166,7 +166,7 @@
                             </li>
                         </div>
                         <div class="li_container d-flex">
-                            <li class="d-flex flex-align-items-center mr-10 mb-10">
+                            <li class="test6 d-flex flex-align-items-center mr-10 mb-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                     <path
                                         fill="#83CD29"
@@ -175,7 +175,7 @@
                                 </svg>
                                 <span>Node.js</span>
                             </li>
-                            <li class="d-flex flex-align-items-center mr-10 mb-10">
+                            <li class="test7 d-flex flex-align-items-center mr-10 mb-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                     <path
                                         fill="#00618A"
@@ -184,7 +184,7 @@
                                 </svg>
                                 <span>MySQL</span>
                             </li>
-                            <li class="d-flex flex-align-items-center mr-10 mb-10">
+                            <li class="test8 d-flex flex-align-items-center mr-10 mb-10">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                                     <path
                                         fill-rule="evenodd"
@@ -290,61 +290,111 @@
                 </div>
             </div>
         </section>
-        <section class="project_container">
+        <section id="projects" class="project_container">
             <div class="section_container project">
                 <h1 class="project__title">PROJETS</h1>
 
                 <div class="project__wrapper">
+
                     <article class="item main-project">
-                        <img src="./images/Groupomania.png" alt="projet reseau social" />
+                        <img src="./images/Groupomania.png" alt="projet reseau social">
+                        <div class="item__info">
+                            <p class="item__info__title">Reseau social d'entreprise : Mise en place du  Frontend & Backend </p>
+                            <p class="item__info__title">Fonctionnalités :</p>
+                            <ul class="d-flex flex-column flex-justify-content-center">
+                                <li class="fs-1-2 textalign-center">Création base de donnée (Méthode MERISE)</li>
+                                <li class=" fs-1-2 textalign-center">Système d'authentification (JWT)</li>
+                                <li class=" fs-1-2 textalign-center">Mise en place serveur, création et relation avec l'API (Opérations CRUD)</li>
+                                <li class="fs-1-2 textalign-center">Scroll Infini, Dark-Thème</li>
+                                <li class="fs-1-2 textalign-center mb-10">Stockage des images sur un hebergeur externe (AWS)</li>
+                            </ul>
+                            <ul>
+                                <li class="item__info__technologies">Angular</li>
+                                <li class="item__info__technologies">Material Angular</li>
+                                <li class="item__info__technologies">Node.js</li>
+                                <li class="item__info__technologies">MySQL</li>
+                                <li class="item__info__technologies">AWS S3</li>
+                            </ul>
+                            <ul class="mb-10">
+                                <a class="item__info__link" target="_blank" href="https://github.com/jpcouhe/socialNetwork">Github</a>
+                                <a class="item__info__link" target="_blank" href="">Youtube</a>
+                                <a class="item__info__link" href="http://www.jpcouhe.fr" target="_blank">Demonstration</a>
+                            </ul>
+                        </div>
+                    </article>
+
                     </article>
                     <article class="item second-project">
                         <img src="./images/hotPiiquante.png" alt="projet API rest" />
+                        <div class="item__info">
+                            <p class="item__info__title">Mise en place Backend (CRUD, securité)</p>
+                            <ul>
+                                <li class="item__info__technologies">Node.Js</li>
+                                <li class="item__info__technologies">Express</li>
+                                <li class="item__info__technologies">MongoDb</li>
+                            </ul>
+                            <ul class="mb-10">
+                                <a class="item__info__link" href="https://github.com/jpcouhe/P6_Piiquante">Github</a>
+                            </ul>
+                        </div>
                     </article>
                     <article class="item second-project">
                         <img src="./images/Lapanthere.png" alt="projet Accessibilité" />
+                        <div class="item__info">
+                            <p class="item__info__title">Optimisation d'un site (WCAG, référencement..) </p>
+                           
+                            <ul>
+                                <li class="item__info__technologies">SEO</li>
+                                <li class="item__info__technologies">Performance</li>
+                                <li class="item__info__technologies">Accessibilité</li>
+                            </ul>
+                            <ul class="mb-10">
+                                <a class="item__info__link" href="" target="_blank">Github</a>
+                            </ul>
+                        </div>
                     </article>
                     <article class="item second-project">
                         <img src="./images/kanap.png" alt="projet kanap" />
+                        <div class="item__info">
+                            <p class="item__info__title">Récupération de données d'une API</p>
+                           
+                            <ul>
+                                <li class="item__info__technologies">JavaScript</li>
+                            </ul>
+                            <ul class="mb-10">
+                                <a class="item__info__link" href="https://github.com/jpcouhe/P5_Kanap" target="_blank">Github</a>
+                            </ul>
+                        </div>
                     </article>
                     <article class="item second-project">
                         <img src="./images/ohMyfood.png" alt="" />
-                    </article>
+                        <div class="item__info">
+                            <p class="item__info__title">Animation et intégration d'une maquette</p>
+                           
+                            <ul>
+                                <li class="item__info__technologies">HTML5</li>
+                                <li class="item__info__technologies">CSS3</li>
+                                <li class="item__info__technologies">SCSS</li>
+                            </ul>
+                            <ul class="mb-10">
+                                <a class="width item__info__link" href="https://github.com/jpcouhe/COUHEJean-philippe_3_19022022" target="_blank">Github</a>
+                                <a class="width item__info__link" href="https://jpcouhe.github.io/COUHEJean-philippe_3_19022022/" target="_blank">Demonstration</a>
+                            </ul>
+                        </div>
+                    </article> -->
                 </div>
             </div>
         </section>
-        <!-- <section class="section_container contact">
-            <div class="contact_wrapper"">
-                <h2 class="contact__title">Lorem ipsu dolo eth huitem ?</h2>
-                    <form class="contact_form" action="">
-                        <div class="inline-form">
-                            <div class="w100">
-                                <label class="mb-10"for="name">Nom</label>
-                                <input type="text" placeholder="Entrez votre Nom"/>
-                            </div>
-                            <div  class="w100"> 
-                                <label class="mb-10" for="email">Email</label>
-                                <input type="text" placeholder="Entrez votre Email"/>
-                            </div>
-                        </div>    
-                        <div class="textarea">
-                            <label class="mb-10" for="message">Message</label>
-                            <textarea name="message" id="" cols="30" rows="15" placeholder="Entrez votre message"></textarea>
-                        </div>
-
-                        <button class="btn">Envoyez</button>
-                    </form>
-            </div>
-        </section> -->
-        <section class="section_container contact">
+        
+        <section id="contact" class="section_container contact">
             <h2 class="contact__title"">Contactez moi !</h2>
-            <p class="contact__mention">pour un projet, une question...</p>
+            <p class="contact__mention">Pour un projet, une question...</p>
             <div class="contact_wrapper">
-                <a href="https://calendly.com/jp-couhe-dev"
+                <a target="_blank" href="https://calendly.com/jp-couhe-dev"
                     ><span class="material-symbols-outlined"> call </span>
                     <h3 class="contact__information">Rendez-vous calendly</h2></a
                 >
-                <a href="mailto:jp.couhe.dev@gmail.com"
+                <a target="_blank" href="mailto:jp.couhe.dev@gmail.com"
                     ><span class="material-symbols-outlined"> mail </span>
                     <h3 class="contact__information">jp.couhe.dev@gmail.com</h2></a
                 >
@@ -354,7 +404,7 @@
             <div class="section_container footer">
                 <ul class="d-flex flex-align-items-center flex-justify-content-center">
                     <li>
-                        <a href="https://github.com/jpcouhe">
+                        <a target="_blank" href="https://github.com/jpcouhe">
                             <svg
                                 version="1.1"
                                 id="Layer_1"
@@ -400,7 +450,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="http://www.linkedin.com/in/jean-philippe-couhe/">
+                        <a target="_blank" href="http://www.linkedin.com/in/jean-philippe-couhe/">
                             <svg
                                 height="72"
                                 viewBox="0 0 72 72"
@@ -423,5 +473,6 @@
                 </ul>
             </div>
         </footer>
+       <script src="./main.js"></script>
     </body>
 </html>

@@ -2,6 +2,10 @@
 
 .presentation {
     padding: 80px 100px 80px;
+    animation-name: ApparitionRight;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
     @include md {
         padding: 50px 70px 40px;
     }

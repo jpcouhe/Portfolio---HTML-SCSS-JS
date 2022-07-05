@@ -1,6 +1,6 @@
 @use "../Utils/" as *;
 .contact {
-    padding: 50px 100px 30px;
+    padding: 50px 100px 50px;
     text-align: center;
 
     @include md {
@@ -37,10 +37,11 @@
     a {
         width: 300px;
         padding: 20px;
-        border-radius: 5px;
+        border: 1px solid $border;
+        border-radius: 20px;
 
         &:hover {
-            background-color: $primary;
+            background-color: rgba(105, 213, 242, 0.5);
         }
 
         @include md {

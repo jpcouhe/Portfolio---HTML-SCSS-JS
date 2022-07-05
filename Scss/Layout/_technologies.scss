@@ -2,6 +2,10 @@
 
 .technologie {
     padding: 0px 100px 80px;
+    animation-name: ApparitionLeft;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
     @include md {
         padding: 0px 70px 40px;
     }
@@ -42,7 +46,54 @@
 .technologie__right {
     display: flex;
     align-items: center;
+    &:hover {
+        .test1 {
+            animation-name: Disapear;
+            animation-duration: 500ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
 
+        .test2 {
+            animation-name: Disapear1;
+            animation-duration: 500ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+
+        .test3 {
+            animation-name: Disapear2;
+            animation-duration: 500ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+
+        .test5 {
+            animation-name: Disapear5;
+            animation-duration: 500ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+
+        .test6 {
+            animation-name: Disapear6;
+            animation-duration: 500ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+        .test7 {
+            animation-name: Disapear7;
+            animation-duration: 500ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+        .test8 {
+            animation-name: Disapear3;
+            animation-duration: 500ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+    }
     ul {
         flex-wrap: wrap;
 

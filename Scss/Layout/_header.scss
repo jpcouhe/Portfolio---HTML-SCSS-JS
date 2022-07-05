@@ -4,6 +4,10 @@
     height: 85px;
     width: 100%;
     padding: 25px;
+    animation-name: Apparition;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
 }
 
 .header__left {
@@ -25,24 +29,34 @@
     @include sm {
         display: none;
     }
-    li {
+    a {
         font-size: 1.4rem;
 
         margin: 0 5px;
         padding: 10px 5px;
         color: $text_color_light;
+        transition: 0.2s all ease-in-out;
+        &:hover {
+            color: $primary;
+        }
         @include breakpoint(560px) {
             padding: 10px 0px;
         }
     }
 
-    li:last-child {
+    a:last-child {
         background-color: $bgcolor_dark;
         color: $white;
-        border-radius: 5px;
         padding: 10px 30px;
+        border-radius: 5px;
+        transition: 0.2s all ease-in-out;
         @include breakpoint(560px) {
             padding: 10px 20px;
+        }
+
+        &:hover {
+            color: $primary;
+            background-color: $bgcolor_dark_hover;
         }
     }
 }
