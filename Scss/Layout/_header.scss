@@ -26,15 +26,29 @@
 }
 
 .header__right {
-    @include sm {
-        display: none;
+    .liste {
+        color: $text_color_light;
+        display: flex;
+        @include sm {
+            background-color: $bgcolor_dark;
+            text-align: center;
+            color: white;
+            position: absolute;
+            width: 100%;
+            top: 85px;
+            left: 0;
+            flex-direction: column;
+            display: none;
+        }
+    }
+
+    .liste.show {
+        display: block;
     }
     a {
         font-size: 1.4rem;
-
         margin: 0 5px;
         padding: 10px 5px;
-        color: $text_color_light;
         transition: 0.2s all ease-in-out;
         &:hover {
             color: $primary;
@@ -53,7 +67,9 @@
         @include breakpoint(560px) {
             padding: 10px 20px;
         }
-
+        @include sm {
+            background-color: transparent;
+        }
         &:hover {
             color: $primary;
             background-color: $bgcolor_dark_hover;

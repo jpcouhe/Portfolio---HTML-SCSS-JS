@@ -1,11 +1,13 @@
 @use "../Utils/" as *;
 
 .presentation {
+    position: relative;
     padding: 80px 100px 80px;
     animation-name: ApparitionRight;
     animation-duration: 1000ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
+    z-index: -1;
     @include md {
         padding: 50px 70px 40px;
     }
@@ -17,6 +19,9 @@
     @include sm {
         padding: 20px 40px 30px;
     }
+}
+.presentation.show {
+    padding-top: 200px;
 }
 
 .presentation__left {
