@@ -16,6 +16,8 @@
 }
 
 .technologie__title {
+    margin-bottom: 20px;
+    text-align: center;
     font-size: 3rem;
     letter-spacing: 5px;
 }
@@ -46,48 +48,56 @@
 .technologie__right {
     display: flex;
     align-items: center;
+    justify-content: center;
     &:hover {
-        .test1 {
+        .technologie1 {
             animation-name: Disapear;
             animation-duration: 500ms;
             animation-timing-function: ease-in-out;
             animation-fill-mode: both;
         }
 
-        .test2 {
+        .technologie2 {
             animation-name: Disapear1;
             animation-duration: 500ms;
             animation-timing-function: ease-in-out;
             animation-fill-mode: both;
         }
 
-        .test3 {
+        .technologie3 {
             animation-name: Disapear2;
             animation-duration: 500ms;
             animation-timing-function: ease-in-out;
             animation-fill-mode: both;
         }
 
-        .test5 {
+        .technologie4 {
+            animation-name: Disapear4;
+            animation-duration: 500ms;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+        }
+
+        .technologie5 {
             animation-name: Disapear5;
             animation-duration: 500ms;
             animation-timing-function: ease-in-out;
             animation-fill-mode: both;
         }
 
-        .test6 {
+        .technologie6 {
             animation-name: Disapear6;
             animation-duration: 500ms;
             animation-timing-function: ease-in-out;
             animation-fill-mode: both;
         }
-        .test7 {
+        .technologie7 {
             animation-name: Disapear7;
             animation-duration: 500ms;
             animation-timing-function: ease-in-out;
             animation-fill-mode: both;
         }
-        .test8 {
+        .technologie8 {
             animation-name: Disapear3;
             animation-duration: 500ms;
             animation-timing-function: ease-in-out;

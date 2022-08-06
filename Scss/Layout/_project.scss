@@ -49,18 +49,20 @@ article {
 }
 
 .item {
+    // height: 600px;
     width: 100%;
-    // height: auto;
     border-radius: 5px;
     border: 1px solid #32343a;
+   
 
-    img {
-        width: 100%;
-        min-height: 400px;
-
-        @include lg {
-            min-height: 500px;
-            height: auto;
+    .image__wrapper{
+        // height: 300px;
+        // background-color: #FFF;
+        
+        img {
+            object-fit: cover;
+            display: block;
+            width: 100%;
         }
     }
 }

@@ -49,7 +49,7 @@
   }
   50% {
     opacity: 1;
-    transform: translateX(-50px);
+    transform: translateX(-80px);
   }
   100% {
     opacity: 1;
@@ -77,7 +77,21 @@
   }
   50% {
     opacity: 1;
-    transform: translateY(50px);
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes Disapear4 {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(100px);
   }
   100% {
     opacity: 1;
@@ -91,7 +105,7 @@
   }
   50% {
     opacity: 1;
-    transform: translate(90px, -50px);
+    transform: translate(-90px, -50px);
   }
   100% {
     opacity: 1;
@@ -105,7 +119,7 @@
   }
   50% {
     opacity: 1;
-    transform: translatex(200px);
+    transform: translatex(-100px);
   }
   100% {
     opacity: 1;
@@ -364,6 +378,7 @@ svg {
   position: relative;
   height: 260px;
   width: 220px;
+  object-fit: contain;
 }
 @media (max-width: 666px) {
   .presentation__left .image_container {
@@ -373,7 +388,6 @@ svg {
 .presentation__left .image_container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   border-radius: 5px;
 }
 .presentation__left .image_frame {
@@ -433,6 +447,8 @@ svg {
 }
 
 .technologie__title {
+  margin-bottom: 20px;
+  text-align: center;
   font-size: 3rem;
   letter-spacing: 5px;
 }
@@ -467,44 +483,51 @@ svg {
 .technologie__right {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.technologie__right:hover .test1 {
+.technologie__right:hover .technologie1 {
   animation-name: Disapear;
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
-.technologie__right:hover .test2 {
+.technologie__right:hover .technologie2 {
   animation-name: Disapear1;
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
-.technologie__right:hover .test3 {
+.technologie__right:hover .technologie3 {
   animation-name: Disapear2;
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
-.technologie__right:hover .test5 {
+.technologie__right:hover .technologie4 {
+  animation-name: Disapear4;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+.technologie__right:hover .technologie5 {
   animation-name: Disapear5;
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
-.technologie__right:hover .test6 {
+.technologie__right:hover .technologie6 {
   animation-name: Disapear6;
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
-.technologie__right:hover .test7 {
+.technologie__right:hover .technologie7 {
   animation-name: Disapear7;
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 }
-.technologie__right:hover .test8 {
+.technologie__right:hover .technologie8 {
   animation-name: Disapear3;
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
@@ -595,15 +618,10 @@ article {
   border-radius: 5px;
   border: 1px solid #32343a;
 }
-.item img {
+.item .image__wrapper img {
+  object-fit: cover;
+  display: block;
   width: 100%;
-  min-height: 400px;
-}
-@media (max-width: 960px) {
-  .item img {
-    min-height: 500px;
-    height: auto;
-  }
 }
 
 .item__info {
